@@ -11,15 +11,20 @@ class Team
 
   def add_player(player_name)
     players.push(player_name)
-end
+  end
 
-def check_for_player(player_name)
+  def check_for_player(player_name)
   players.include?(player_name)
+  end
+
+
+def win_or_loose(result)
+  if result == "win"
+    @points += 3
+  else
+    return @points
+  end
 end
 
-def team__score
-if 
-end
-end
 
 end
